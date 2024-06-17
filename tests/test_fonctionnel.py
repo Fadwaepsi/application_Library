@@ -2,6 +2,7 @@ import pytest
 from ..library.book import Book
 from ..library.library import Library
 
+@pytest.fixture
 def library_with_books():
     library = Library()
     book1 = Book("The Great Gatsby", "F. Scott Fitzgerald")
